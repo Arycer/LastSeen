@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "lastseen",
+  "version": "${version}",
+  "name": "LastSeen",
+  "description": "A mod for EscapeTeamMC By Arycer.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/lastseen/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "me.arycer.lastseen.LastseenMod"
+    ]
+  },
+  "mixins": [
+    "lastseen.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

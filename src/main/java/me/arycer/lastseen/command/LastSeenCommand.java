@@ -20,7 +20,7 @@ import java.util.*;
 
 public class LastSeenCommand implements Command<ServerCommandSource> {
     public static final DynamicCommandExceptionType UNEXPECTED_ERROR = new DynamicCommandExceptionType((name) ->
-            Text.of("An unexpected error ocurred while trying to get the last seen time or timezone of %s".formatted(name)));
+            Text.of("An unexpected error occurred while trying to get the last seen time or timezone of %s".formatted(name)));
     private static final DynamicCommandExceptionType SERVER_NULL = new DynamicCommandExceptionType((ignore) ->
             Text.of("Server is null"));
 

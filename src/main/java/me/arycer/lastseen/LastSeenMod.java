@@ -1,11 +1,18 @@
 package me.arycer.lastseen;
 
-import net.fabricmc.api.ModInitializer;
+import me.arycer.lastseen.command.LastSeenCommand;
+import me.arycer.lastseen.io.LastSeenIO;
+import net.fabricmc.api.DedicatedServerModInitializer;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-public class LastseenMod implements ModInitializer {
+public class LastSeenMod implements DedicatedServerModInitializer {
+    public static final String MOD_ID = "lastseen";
+    public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
     @Override
-    public void onInitialize() {
+    public void onInitializeServer() {
+        LastSeenIO.INSTANCE.load();
+        LastSeenCommand.register();
     }
 }
-z<

@@ -3,15 +3,14 @@
   "id": "lastseen",
   "version": "${version}",
   "name": "LastSeen",
-  "description": "A mod for EscapeTeamMC By Arycer.",
-  "authors": [],
+  "description": "A mod for checking when players have played for the last time",
+  "authors": ["Arycer"],
   "contact": {},
   "license": "All-Rights-Reserved",
-  "icon": "assets/lastseen/icon.png",
   "environment": "server",
   "entrypoints": {
-    "main": [
-      "me.arycer.lastseen.LastseenMod"
+    "server": [
+      "me.arycer.lastseen.LastSeenMod"
     ]
   },
   "mixins": [
